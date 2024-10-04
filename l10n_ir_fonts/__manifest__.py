@@ -15,7 +15,7 @@
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     "category": "Localization/Iran",
-    "version": "0.1",
+    "version": "18.0",
     'depends': ['web'],
     'license': 'LGPL-3',
     'assets': {

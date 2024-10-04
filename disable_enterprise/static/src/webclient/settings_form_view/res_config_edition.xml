@@ -6,7 +6,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 -->
 <templates xml:space="preserve">
 
-    <t t-inherit="web.res_config_edition" t-inherit-mode="extension" owl="1">
+    <t t-inherit="res_config_edition" t-inherit-mode="extension">
 
         <xpath expr="//h5" position="replace">
             <t t-if="expirationDate">
