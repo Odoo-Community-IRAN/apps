@@ -1,0 +1,76 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* parspack_auto_database_backup
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20250120\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-08 07:25+0000\n"
+"PO-Revision-Date: 2025-02-08 07:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: parspack_auto_database_backup
+#. odoo-python
+#: code:addons/parspack_auto_database_backup/models/db_backup_configure.py:0
+#, python-format
+msgid "An error occurred while testing the connection."
+msgstr ""
+
+#. module: parspack_auto_database_backup
+#: model:ir.model,name:parspack_auto_database_backup.model_db_backup_configure
+msgid "Automatic Database Backup"
+msgstr "پشتیبان گیری خودکار از پایگاه داده"
+
+#. module: parspack_auto_database_backup
+#: model:ir.model.fields,field_description:parspack_auto_database_backup.field_db_backup_configure__backup_destination
+msgid "Backup Destination"
+msgstr "مقصد پشتیبان"
+
+#. module: parspack_auto_database_backup
+#. odoo-python
+#: code:addons/parspack_auto_database_backup/models/db_backup_configure.py:0
+#, python-format
+msgid "Bucket not found. Please check the bucket name and try again."
+msgstr ""
+
+#. module: parspack_auto_database_backup
+#. odoo-python
+#: code:addons/parspack_auto_database_backup/models/db_backup_configure.py:0
+#, python-format
+msgid "Connection Test Failed!"
+msgstr ""
+
+#. module: parspack_auto_database_backup
+#. odoo-python
+#: code:addons/parspack_auto_database_backup/models/db_backup_configure.py:0
+#, python-format
+msgid "Connection Test Succeeded!"
+msgstr ""
+
+#. module: parspack_auto_database_backup
+#: model:ir.model.fields.selection,name:parspack_auto_database_backup.selection__db_backup_configure__backup_destination__custom_s3
+msgid "Custom S3"
+msgstr "پارس پک(custom)"
+
+#. module: parspack_auto_database_backup
+#: model:ir.model.fields,help:parspack_auto_database_backup.field_db_backup_configure__backup_destination
+msgid "Destination of the backup"
+msgstr "مقصد پشتیبان"
+
+#. module: parspack_auto_database_backup
+#: model:ir.model.fields,field_description:parspack_auto_database_backup.field_db_backup_configure__endpoint_url
+msgid "Endpoint Url"
+msgstr ""
+
+#. module: parspack_auto_database_backup
+#. odoo-python
+#: code:addons/parspack_auto_database_backup/models/db_backup_configure.py:0
+#, python-format
+msgid "Everything seems properly set up!"
+msgstr ""
