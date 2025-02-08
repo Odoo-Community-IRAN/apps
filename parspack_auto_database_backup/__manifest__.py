@@ -4,7 +4,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
     "name": "Parspack Auto Database Backup",
-    "summary": """Persian Calendar""",
+    "summary": """Parspack Auto Database Backup""",
     "version": "1.0.0",
     "category": "Extra Tools",
     "description": "This module has been developed for creating database "
