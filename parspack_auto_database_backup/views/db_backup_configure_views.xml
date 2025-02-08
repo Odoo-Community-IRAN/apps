@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <record id="inherit_db_backup_configure_view_form" model="ir.ui.view">
+        <field name="name">inherit.db.backup.configure.view.form</field>
+        <field name="model">db.backup.configure</field>
+        <field name="inherit_id" ref="auto_database_backup.db_backup_configure_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='backup_destination']" position="after">
+                <field name="endpoint_url"
+                    invisible="backup_destination != 'custom_s3'"
+                    required="backup_destination == 'custom_s3'"
+                />
+            </xpath>
+
+            <xpath expr="//button[@name='action_s3cloud']" position="attributes">
+                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='aws_access_key']" position="attributes">
+                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='aws_secret_access_key']" position="attributes">
+                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='bucket_file_name']" position="attributes">
+                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='aws_folder_name']" position="attributes">
+                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
