@@ -12,29 +12,28 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="arch" type="xml">
             <xpath expr="//field[@name='backup_destination']" position="after">
                 <field name="endpoint_url"
-                    invisible="backup_destination != 'custom_s3'"
-                    required="backup_destination == 'custom_s3'"
+                    attrs="{'invisible': [('backup_destination', '!=', 'custom_s3')], 'required': [('backup_destination', '=', 'custom_s3')]}"
                 />
             </xpath>
 
             <xpath expr="//button[@name='action_s3cloud']" position="attributes">
-                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+                <attribute name="attrs">{'invisible': [('backup_destination', 'not in', ('amazon_s3', 'custom_s3'))]}</attribute>
             </xpath>
 
             <xpath expr="//field[@name='aws_access_key']" position="attributes">
-                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+                <attribute name="attrs">{'invisible': [('backup_destination', 'not in', ('amazon_s3', 'custom_s3'))]}</attribute>
             </xpath>
 
             <xpath expr="//field[@name='aws_secret_access_key']" position="attributes">
-                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+                <attribute name="attrs">{'invisible': [('backup_destination', 'not in', ('amazon_s3', 'custom_s3'))]}</attribute>
             </xpath>
 
             <xpath expr="//field[@name='bucket_file_name']" position="attributes">
-                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+                <attribute name="attrs">{'invisible': [('backup_destination', 'not in', ('amazon_s3', 'custom_s3'))]}</attribute>
             </xpath>
 
             <xpath expr="//field[@name='aws_folder_name']" position="attributes">
-                <attribute name="invisible">backup_destination not in ('amazon_s3', 'custom_s3')</attribute>
+                <attribute name="attrs">{'invisible': [('backup_destination', 'not in', ('amazon_s3', 'custom_s3'))]}</attribute>
             </xpath>
         </field>
     </record>
