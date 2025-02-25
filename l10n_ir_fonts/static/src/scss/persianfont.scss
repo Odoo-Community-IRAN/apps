@@ -2,27 +2,27 @@
 // IRAN FONT FOR ODOO DEVELOPED BY https://odoo-community.ir/ TEAM
 // https://odoo-community.ir/
 // ------------------------------------------------------------------
-$iran-font-path: '../fonts/IRANSans';
+$iran-font-path: '../fonts/Vazir';
 
 @mixin iran-font($type, $weight, $style) {
     @font-face {
-        font-family: 'IRANSans';
-        src: url('#{$iran-font-path}/otf/IRANSansWeb_#{$type}.otf');
-        src: url('#{$iran-font-path}/otf/IRANSansWeb_#{$type}.otf?#iefix') format('embedded-opentype'),
-             url('#{$iran-font-path}/woff/IRANSansWeb_#{$type}.woff') format('woff'),
-             url('#{$iran-font-path}/woff2/IRANSansWeb_#{$type}.woff2') format('woff2'),
-             url('#{$iran-font-path}/ttf/IRANSansWeb_#{$type}.ttf') format('truetype');
+        font-family: 'Vazir';
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD.eot');
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD.eot?#iefix') format('embedded-opentype'),
+             url('#{$iran-font-path}/woff/Vazir-#{$type}-FD.woff') format('woff'),
+             url('#{$iran-font-path}/woff2/Vazir-#{$type}-FD.woff2') format('woff2'),
+             url('#{$iran-font-path}/ttf/Vazir-#{$type}-FD.ttf') format('truetype');
         font-weight: $weight;
         font-style: $style;
     }
 
     @font-face {
-        font-family: 'IRANSans_#{$type}';
-        src: url('#{$iran-font-path}/otf/IRANSansWeb_#{$type}.otf');
-        src: url('#{$iran-font-path}/otf/IRANSansWeb_#{$type}.otf?#iefix') format('embedded-opentype'),
-             url('#{$iran-font-path}/woff/IRANSansWeb_#{$type}.woff') format('woff'),
-             url('#{$iran-font-path}/woff2/IRANSansWeb_#{$type}.woff2') format('woff2'),
-             url('#{$iran-font-path}/ttf/IRANSansWeb_#{$type}.ttf') format('truetype');
+        font-family: 'Vazir_#{$type}';
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD.eot');
+        src: url('#{$iran-font-path}/eot/Vazir-#{$type}-FD.eot?#iefix') format('embedded-opentype'),
+             url('#{$iran-font-path}/woff/Vazir-#{$type}-FD.woff') format('woff'),
+             url('#{$iran-font-path}/woff2/Vazir-#{$type}-FD.woff2') format('woff2'),
+             url('#{$iran-font-path}/ttf/Vazir-#{$type}-FD.ttf') format('truetype');
     }
 }
 
@@ -32,7 +32,7 @@ $iran-font-path: '../fonts/IRANSans';
 
 
 
-@include iran-font-pair('UltraLight', 200);
+@include iran-font-pair('Thin', 200);
 @include iran-font-pair('Light', 300);
 @include iran-font-pair('Regular', 400);
 @include iran-font-pair('Medium', 500);

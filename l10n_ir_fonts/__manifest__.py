@@ -6,7 +6,7 @@
     'name': "Persian font",
 
     'summary': """
-        change defult font to nice persian font""",
+        change defult font to vazir persian font""",
 
     'description': """
         Change the defult persian font of the all interfaces with a beautiful one preferred by the Persian user
@@ -15,7 +15,7 @@
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     "category": "Localization/Iran",
-    "version": "18.0",
+    "version": "1.1.0",
     'depends': ['web'],
     'license': 'LGPL-3',
     'assets': {
