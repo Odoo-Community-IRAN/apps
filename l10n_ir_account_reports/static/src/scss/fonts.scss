@@ -1,0 +1,40 @@
+/* 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+*/
+$iransans-font-path: '../fonts/IRANSans';
+$iransansen-font-path: '../fonts/IRANSansEN';
+
+
+@mixin iransans-font($type, $weight, $style) {
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('#{$iransans-font-path}/woff2/IRANSansWeb_#{$type}.woff2') format('woff2'), /* FF39+, Chrome36+, Opera24+ */
+    url('#{$iransans-font-path}/woff/IRANSansWeb_#{$type}.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+ */
+    font-weight: $weight;
+    font-style: $style;
+  }
+
+  @font-face {
+    font-family: 'IRANSansEN';
+    src: url('#{$iransansen-font-path}/woff2/IRANSansWeb_#{$type}.woff2') format('woff2'), /* FF39+, Chrome36+, Opera24+ */
+    url('#{$iransansen-font-path}/woff/IRANSansWeb_#{$type}.woff') format('woff'); /* FF3.6+, IE9, Chrome6+, Saf5.1+ */
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin iransans-font-pair($type, $weight) {
+  @include iransans-font('#{$type}', $weight, normal);
+}
+
+@include iransans-font-pair('Thin', 100);
+@include iransans-font-pair('UltraLight', 200);
+@include iransans-font-pair('Light', 300);
+@include iransans-font-pair('Regular', 400);
+@include iransans-font-pair('Medium', 500);
+@include iransans-font-pair('DemiBold', 600);
+@include iransans-font-pair('Bold', 700);
+@include iransans-font-pair('ExtraBold', 800);
+@include iransans-font-pair('Black', 900);
