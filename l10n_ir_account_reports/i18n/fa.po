@@ -1,0 +1,205 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_ir_account_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20241016\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-04 08:35+0000\n"
+"PO-Revision-Date: 2025-03-04 08:35+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_ir_account_reports
+#: model:ir.actions.report,print_report_name:l10n_ir_account_reports.action_report_sale_official
+msgid "'SALE_%s' % (object.name)"
+msgstr ""
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span class=\"w-100\">Invoice#: </span>"
+msgstr "<span class=\"w-100\">شماره فاکتور: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Count</span>"
+msgstr "<span>مقدار / تعداد</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Customer Information</span>"
+msgstr "<span>اطلاعات خریدار</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Date: </span>"
+msgstr "<span>تاریخ: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Description of products or services</span>"
+msgstr "<span>شرح کالا یا خدمات</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Details of the products or services being traded</span>"
+msgstr "<span>مشخصات کالا یا خدمات مورد معامله</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Full Address:</span>"
+msgstr "<span>آدرس کامل:</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Name of Real/Legal Person: </span>"
+msgstr "<span>نام شخص حقیقی/حقوقی: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>National Code/Company Registry: </span>"
+msgstr "<span>کد ملی/شماره ثبت شرکت: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Phone: </span>"
+msgstr "<span>تلفن: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Product Code</span>"
+msgstr "<span>کد کالا</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Seller Information</span>"
+msgstr "<span>اطلاعات فروشنده</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Tax</span>"
+msgstr "<span>مالیات و عوارض</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>The Amount of Discount</span>"
+msgstr "<span>مبلغ تخفیف</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Total Amount After Discount</span>"
+msgstr "<span>مبلغ کل پس از تخفیف</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Total Amount</span>"
+msgstr "<span>مبلغ کل</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Total Price</span>"
+msgstr "مبلغ کل"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Unit Price</span>"
+msgstr "<span>مبلغ واحد</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Unit of measurement</span>"
+msgstr "<span>واحد سنجش</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Vat Code: </span>"
+msgstr "<span>کد اقتصادی: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "<span>Zip Code: </span>"
+msgstr "<span>کد پستی: </span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>order</span>"
+msgstr "<span>ردیف</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr "<strong class=\"mr16\">جمع جزء</strong>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid ""
+"<strong class=\"text-center\">Scan me with your banking "
+"app.</strong><br/><br/>"
+msgstr ""
+"<strong class=\"text-center\">من را با برنامه بانکی خود اسکن "
+"کنید.</strong><br/><br/>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<strong>Incoterm: </strong>"
+msgstr "<strong> اصطلاحات بین‌المللی بازرگانی: </strong>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<strong>Total</strong>"
+msgstr "<strong>جمع کل</strong>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "Customer stamp and signature:"
+msgstr "مهر و امضاء خریدار:"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "Descriptions:"
+msgstr "توضیحات:"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "Invoice for the sale products and services"
+msgstr "پیش فاکتور فروش کالا و خدمات"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "Invoice for the sale products and services - Cancelled"
+msgstr "صورتحساب فروش کالا و خدمات - لغو شده"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "Logo"
+msgstr "لوگو"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
+msgstr "صفحه: <span class=\"page\"/> / <span class=\"topage\"/>"
+
+#. module: l10n_ir_account_reports
+#: model:ir.actions.report,name:l10n_ir_account_reports.action_report_sale_official
+msgid "Quotation / Official Sale"
+msgstr "پیش فاکتور / فاکتور رسمی"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
+msgid "Quotation for the sale products and services"
+msgstr "پیش فاکتور فروش کالا و خدمات"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "Seller stamp and signature:"
+msgstr "مهر و امضاء فروشنده:"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "This quotation is valid until:"
+msgstr "اعتبار این پیش فاکتور تا تاریخ:"
