@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payment_zarinpal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20241016\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-04 08:52+0000\n"
+"PO-Revision-Date: 2025-03-04 08:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: payment_zarinpal
+#: model:ir.model.fields,field_description:payment_zarinpal.field_payment_provider__code
+msgid "Code"
+msgstr "کد"
+
+#. module: payment_zarinpal
+#. odoo-python
+#: code:addons/fadoo-addons/payment_zarinpal/models/payment_transaction.py:0
+#: code:addons/payment_zarinpal/models/payment_transaction.py:0
+#, python-format
+msgid "No transaction found matching reference %s."
+msgstr ""
+
+#. module: payment_zarinpal
+#: model:ir.model,name:payment_zarinpal.model_payment_provider
+msgid "Payment Provider"
+msgstr "ارائه دهنده پرداخت"
+
+#. module: payment_zarinpal
+#: model:ir.model,name:payment_zarinpal.model_payment_transaction
+msgid "Payment Transaction"
+msgstr "تراکنش پرداخت"
+
+#. module: payment_zarinpal
+#: model:ir.model.fields,help:payment_zarinpal.field_payment_transaction__zarinpal_authority
+#: model:ir.model.fields,help:payment_zarinpal.field_payment_transaction__zarinpal_refid
+msgid "Reference of the TX as stored in the acquirer database"
+msgstr ""
+
+#. module: payment_zarinpal
+#. odoo-python
+#: code:addons/fadoo-addons/payment_zarinpal/models/payment_transaction.py:0
+#: code:addons/fadoo-addons/payment_zarinpal/models/payment_transaction.py:0
+#: code:addons/fadoo-addons/payment_zarinpal/models/payment_transaction.py:0
+#: code:addons/payment_zarinpal/models/payment_transaction.py:0
+#: code:addons/payment_zarinpal/models/payment_transaction.py:0
+#: code:addons/payment_zarinpal/models/payment_transaction.py:0
+#, python-format
+msgid "The payment encountered an error with code %s"
+msgstr ""
+
+#. module: payment_zarinpal
+#: model:ir.model.fields,help:payment_zarinpal.field_payment_provider__code
+msgid "The technical code of this payment provider."
+msgstr "کد فنی این ارائه دهنده پرداخت."
+
+#. module: payment_zarinpal
+#: model:ir.model.fields.selection,name:payment_zarinpal.selection__payment_provider__code__zarinpal
+#: model:payment.provider,display_as:payment_zarinpal.payment_provider_zarinpal
+#: model:payment.provider,name:payment_zarinpal.payment_provider_zarinpal
+msgid "Zarinpal"
+msgstr ""
+
+#. module: payment_zarinpal
+#: model:ir.model.fields,field_description:payment_zarinpal.field_payment_provider__zarinpal_merchant_id
+msgid "Zarinpal Merchant id"
+msgstr ""
+
+#. module: payment_zarinpal
+#: model:ir.model.fields,field_description:payment_zarinpal.field_payment_transaction__zarinpal_refid
+msgid "zarinpal Reference Id"
+msgstr ""
+
+#. module: payment_zarinpal
+#: model:ir.model.fields,field_description:payment_zarinpal.field_payment_transaction__zarinpal_authority
+msgid "zarinpal authority"
+msgstr ""
+
+#. module: payment_zarinpal
+#: model_terms:payment.provider,auth_msg:payment_zarinpal.payment_provider_zarinpal
+msgid "این پرداخت مجاز است."
+msgstr ""
+
+#. module: payment_zarinpal
+#: model_terms:payment.provider,pending_msg:payment_zarinpal.payment_provider_zarinpal
+msgid "پرداخت شما با موفقیت انجام شد اما در انتظار تایید است."
+msgstr ""
+
+#. module: payment_zarinpal
+#: model_terms:payment.provider,done_msg:payment_zarinpal.payment_provider_zarinpal
+msgid "پرداخت شما با موفقیت انجام شد. متشکرم!"
+msgstr ""
+
+#. module: payment_zarinpal
+#: model_terms:payment.provider,cancel_msg:payment_zarinpal.payment_provider_zarinpal
+msgid "پرداخت شما لغو شده است."
+msgstr ""
