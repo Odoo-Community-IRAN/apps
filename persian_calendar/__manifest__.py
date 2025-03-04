@@ -12,7 +12,10 @@
     'images': ['static/description/theme_screenshot.jpg'],
     'version': '1.0.3',
     'license': 'LGPL-3',
-    'depends': ['base', 'web',],
+    'depends': ['base', 'web', 'event'],
+    'data':[
+        'static/src/xml/kanban.xml',
+    ],
     'assets': {
         'web.assets_backend': [
             'persian_calendar/static/src/js/main.js',
@@ -28,6 +31,7 @@
             'persian_calendar/static/src/js/jdatetime.js',
             'persian_calendar/static/src/js/calendar_hook.js',
             'persian_calendar/static/src/js/jfullcalendar.js',
+            'persian_calendar/static/src/js/kanban.js',
         ]
     }
 }
