@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <record id="kavenegar_res_config_settings_form_view_inherit" model="ir.ui.view">
+        <field name="name">res.config.settings.inherit.form.view</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='contacts_settings']" position="inside">
+                <div id="sms_provider_settings">
+                    <div class='row mt16 o_settings_container' name="sms_provider_setting_container">
+                        <div class="col-12 col-lg-6 o_setting_box" id="sms_provider_setting_box">
+                            <div class='o_setting_right_pane'>
+                                <div class="o_form_label">
+                                    SMS Provider Settings
+                                </div>
+                                <div class="text-muted">
+                                    View your IAP Services and recharge your credits
+                                </div>
+                                <div class='mt8'>
+                                    <button
+                                        name="%(odoo_iran_sms.kavenegar_sms_provider_action_window)d"
+                                        icon="fa-arrow-right"
+                                        type="action"
+                                        string="Set SMS Provider"
+                                        class="btn-link"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
