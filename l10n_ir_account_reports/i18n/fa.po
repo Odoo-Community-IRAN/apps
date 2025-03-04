@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0+e\n"
+"Project-Id-Version: Odoo Server 16.0+e-20241016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 08:33+0000\n"
-"PO-Revision-Date: 2025-03-03 08:33+0000\n"
+"POT-Creation-Date: 2025-03-04 08:35+0000\n"
+"PO-Revision-Date: 2025-03-04 08:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,19 +18,12 @@ msgstr ""
 #. module: l10n_ir_account_reports
 #: model:ir.actions.report,print_report_name:l10n_ir_account_reports.action_report_sale_official
 msgid "'SALE_%s' % (object.name)"
-msgstr "'پیش_فاکتور_%s' % (object.name)"
+msgstr ""
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span class=\"w-100\">Invoice#: </span>"
 msgstr "<span class=\"w-100\">شماره فاکتور: </span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
-msgid ""
-"<span groups=\"account.group_show_line_subtotals_tax_excluded\">The sum of the total amount plus the sum of taxes</span>\n"
-"                            <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
-msgstr ""
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
@@ -106,6 +99,11 @@ msgstr "<span>مبلغ کل پس از تخفیف</span>"
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Total Amount</span>"
 msgstr "<span>مبلغ کل</span>"
+
+#. module: l10n_ir_account_reports
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Total Price</span>"
+msgstr "مبلغ کل"
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document

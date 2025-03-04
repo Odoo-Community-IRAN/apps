@@ -59,8 +59,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                 <span>Tax</span>
                             </th>
                             <th name="th_subtotal" class="text-left font-weight-light">
-                            <span groups="account.group_show_line_subtotals_tax_excluded">The sum of the total amount plus the sum of taxes</span>
-                            <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+                            <span>Total Price</span>
                             </th>
                         </tr>
                     </thead>
