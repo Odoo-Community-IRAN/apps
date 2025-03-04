@@ -1,0 +1,132 @@
+/* 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+*/
+table.officialTable {
+  margin-bottom: 0.5rem;
+  table, th, td {
+      border: 1px solid #c5c5c5;
+      border-collapse: collapse;
+  }
+  th {
+      vertical-align: middle;
+      font-weight: 500;
+  }
+  th[name="th_order"] {
+      span {
+          writing-mode: vertical-rl;
+      }
+  }
+}
+div#total table.officialTotalTable {
+  margin-bottom: 0;
+  table, th, tr {
+      border: 1px solid #c5c5c5;
+      border-collapse: collapse;
+  }
+  tr.o_subtotal,
+  tr.o_total {
+      td {
+          border-top: 1px solid #c5c5c5 !important;
+      }
+  }
+}
+.officialDescription {
+  border: 1px solid #c5c5c5;
+  padding: 5px;
+  line-height: 1;
+  > p {
+      margin-bottom: 0.8rem;
+  }
+}
+.officialReport{
+  .border{
+      border-color: #c5c5c5 !important;
+  }
+}
+.min-w-12mm{
+  min-width: 12mm;
+}
+
+#tableRowId > td {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.columnn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.columnn-r:after {
+  width: 100.00%;
+}
+.hasan {
+  text-align: center !important;
+}
+.hasan-r {
+  text-align: right !important;
+}
+.hasan-l {
+  text-align: left !important;
+}
+
+.columnn-5 {
+  float: left;
+  width: 41.65%;
+  padding: 10px;
+}
+.columnn-3 {
+  float: left;
+  width: 24.99%;
+  padding: 10px;
+}
+.columnn-4 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.columnn-2 {
+  float: left;
+  width: 20.0%;
+  padding: 10px;
+}
+
+.columnn-l {
+  float: left;
+  width: 20.0%;
+  // padding: 10px;
+}
+
+.columnn {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.help-hasan {
+  background-color: red;
+}
+.box{
+
+  height: 10px;
+  
+  width: 10px;
+  
+  border: 5px;
+  border-color: black;
+  
+}
+.border-full{
+  border:2px solid;
+}
+.border-full-d{
+  border:2px dotted;
+}
