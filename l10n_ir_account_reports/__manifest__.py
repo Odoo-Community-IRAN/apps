@@ -3,11 +3,11 @@
 # @author: Odoo Community Iran (https://odoo-community.ir/
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
-    "name": "Fadoo Iranian Reports",
-    "summary": """Fadoo Iranian Reports""",
-    "description": """Fadoo Iranian Reports""",
+    "name": "Odoo Iran Print",
+    "summary": """Odoo Iran Print""",
+    "description": """Odoo Iran Print""",
     "category": "Accounting/Localizations/Reporting",
-    "version": "18.0.1.0",
+    "version": "18.0.1.0.0",
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir",
     "license": "AGPL-3",
