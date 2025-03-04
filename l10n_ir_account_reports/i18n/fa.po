@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0+e-20241016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-03 08:55+0000\n"
-"PO-Revision-Date: 2025-03-03 08:55+0000\n"
+"POT-Creation-Date: 2025-03-04 08:35+0000\n"
+"PO-Revision-Date: 2025-03-04 08:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,135 +21,34 @@ msgid "'SALE_%s' % (object.name)"
 msgstr ""
 
 #. module: l10n_ir_account_reports
-#: model:ir.actions.report,print_report_name:l10n_ir_account_reports.account_detail_invoices_cover_document
-#: model:ir.actions.report,print_report_name:l10n_ir_account_reports.account_invoices_cover_document
-#: model:ir.actions.report,print_report_name:l10n_ir_account_reports.account_ledger_invoices_cover_document
-#: model:ir.actions.report,print_report_name:l10n_ir_account_reports.account_subsidiary_invoices_cover_document
-msgid "(object._get_move_display_name())"
-msgstr ""
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.report,print_report_name:l10n_ir_account_reports.action_report_invoices_official
-msgid "(object._get_report_base_filename())"
-msgstr ""
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-msgid ""
-"<span class=\"d-inline-block w-auto min-w-12mm\" style=\"white-space: "
-"nowrap; direction: ltr;\">Cash:</span>"
-msgstr ""
-"<span class=\"d-inline-block w-auto min-w-12mm\" style=\"white-space: "
-"nowrap; direction: ltr;margin-right: 10px;\">نقدی:</span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-msgid ""
-"<span class=\"d-inline-block w-auto min-w-12mm\" style=\"white-space: "
-"nowrap; direction: ltr;\">Not Cash:</span>"
-msgstr ""
-"<span class=\"d-inline-block w-auto min-w-12mm\" style=\"white-space: "
-"nowrap; direction: ltr;margin-right: 10px;\">غیر نقدی:</span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span class=\"w-100\">Invoice#: </span>"
 msgstr "<span class=\"w-100\">شماره فاکتور: </span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
-msgid ""
-"<span groups=\"account.group_show_line_subtotals_tax_excluded\">The sum of the total amount plus the sum of taxes</span>\n"
-"                <span groups=\"account.group_show_line_subtotals_tax_included\">Total Price</span>"
-msgstr ""
-"<span groups=\"account.group_show_line_subtotals_tax_excluded\">جمع مبلغ کل به علاوه مالیات و عوارض</span>\n"
-"                <span groups=\"account.group_show_line_subtotals_tax_included\">مبلغ کل</span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
-msgid "<span>City: </span>"
-msgstr "استان:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Count</span>"
 msgstr "<span>مقدار / تعداد</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Customer Information</span>"
 msgstr "<span>اطلاعات خریدار</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Date: </span>"
 msgstr "<span>تاریخ: </span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Description of products or services</span>"
 msgstr "<span>شرح کالا یا خدمات</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Details of the products or services being traded</span>"
 msgstr "<span>مشخصات کالا یا خدمات مورد معامله</span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "<span>Document Date:</span>"
-msgstr "تاریخ سند:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "<span>Document Description:</span>"
-msgstr "شرح سند:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "<span>Document Number:</span>"
-msgstr "شماره سند:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "<span>Document State:</span>"
-msgstr "وضعیت سند:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "<span>Document fixed Number:</span>"
-msgstr "شماره سند"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-msgid "<span>Exteras</span>"
-msgstr "اضافات"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
-msgid "<span>Full Address: </span>"
-msgstr "نشانی"
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
@@ -157,15 +56,9 @@ msgid "<span>Full Address:</span>"
 msgstr "<span>آدرس کامل:</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Name of Real/Legal Person: </span>"
 msgstr "<span>نام شخص حقیقی/حقوقی: </span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-msgid "<span>Narration: </span>"
-msgstr "توضیحات:"
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
@@ -173,112 +66,71 @@ msgid "<span>National Code/Company Registry: </span>"
 msgstr "<span>کد ملی/شماره ثبت شرکت: </span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "<span>Page:</span> <span class=\"page\"/> from <span class=\"topage\"/>"
-msgstr "<span>صفحه:</span> <span class=\"page\"/> از <span class=\"topage\"/>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Phone: </span>"
 msgstr "<span>تلفن: </span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Product Code</span>"
 msgstr "<span>کد کالا</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
-msgid "<span>Quotation for the sale products and services</span>"
-msgstr "صورتحساب فروش کالا و خدمات"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
-msgid "<span>Registration ID: </span>"
-msgstr "<span>شناسه ثبت: </span>"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-msgid "<span>Sale Type: </span>"
-msgstr "نحوه فروش:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Seller Information</span>"
 msgstr "<span>اطلاعات فروشنده</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
-msgid "<span>State: </span>"
-msgstr "شهرستان:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Tax</span>"
 msgstr "<span>مالیات و عوارض</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>The Amount of Discount</span>"
 msgstr "<span>مبلغ تخفیف</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Total Amount After Discount</span>"
 msgstr "<span>مبلغ کل پس از تخفیف</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Total Amount</span>"
 msgstr "<span>مبلغ کل</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
+#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
+msgid "<span>Total Price</span>"
+msgstr "مبلغ کل"
+
+#. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Unit Price</span>"
 msgstr "<span>مبلغ واحد</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>Unit of measurement</span>"
 msgstr "<span>واحد سنجش</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Vat Code: </span>"
 msgstr "<span>کد اقتصادی: </span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
-msgid "<span>Website: </span>"
-msgstr "نمابر:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "<span>Zip Code: </span>"
 msgstr "<span>کد پستی: </span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<span>order</span>"
 msgstr "<span>ردیف</span>"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "<strong class=\"mr16\">Subtotal</strong>"
 msgstr "<strong class=\"mr16\">جمع جزء</strong>"
@@ -303,84 +155,9 @@ msgid "<strong>Total</strong>"
 msgstr "<strong>جمع کل</strong>"
 
 #. module: l10n_ir_account_reports
-#: model:ir.model,name:l10n_ir_account_reports.model_account_account
-msgid "Account"
-msgstr "حساب"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Account Code"
-msgstr "کد حساب"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_report_configs
-msgid "Account Report Configs"
-msgstr "تنظیمات گزارش"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-msgid "Accounting Document"
-msgstr "سند حسابداری"
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.report,name:l10n_ir_account_reports.account_invoices_cover_document
-msgid "Accounting Document Report"
-msgstr "چاپ سند حسابداری"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model,name:l10n_ir_account_reports.model_account_report
-msgid "Accounting Report"
-msgstr "گزارش حسابداری"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_3
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_3_t
-msgid "Approver"
-msgstr "تصویب کننده"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model,name:l10n_ir_account_reports.model_res_company
-msgid "Companies"
-msgstr "شرکت"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_4
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_4_t
-msgid "Considerations"
-msgstr "ملاحضات"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Credit"
-msgstr "بستانکار"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "Customer stamp and signature:"
 msgstr "مهر و امضاء خریدار:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Debit"
-msgstr "بدهکار"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Description"
-msgstr "شرح"
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
@@ -388,46 +165,14 @@ msgid "Descriptions:"
 msgstr "توضیحات:"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-msgid "Detail Accounting Document"
-msgstr "سند خلاصه حسابداری در سطح کل و معین و تحلیلی"
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.report,name:l10n_ir_account_reports.account_detail_invoices_cover_document
-msgid "Detail Accounting Document Report"
-msgstr "چاپ سند خلاصه کل و معین و تحلیلی"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "Invoice for the sale products and services"
 msgstr "پیش فاکتور فروش کالا و خدمات"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "Invoice for the sale products and services - Cancelled"
 msgstr "صورتحساب فروش کالا و خدمات - لغو شده"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model,name:l10n_ir_account_reports.model_account_move
-msgid "Journal Entry"
-msgstr "داده روزنامه"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model,name:l10n_ir_account_reports.model_account_move_line
-msgid "Journal Item"
-msgstr "آیتم روزنامه"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-msgid "Ledger Accounting Document"
-msgstr "سند خلاصه حسابداری درسطح کل"
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.report,name:l10n_ir_account_reports.account_ledger_invoices_cover_document
-msgid "Ledger Accounting Document Report"
-msgstr "چاپ سند خلاصه کل"
 
 #. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
@@ -435,23 +180,9 @@ msgid "Logo"
 msgstr "لوگو"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "No"
-msgstr "ردیف"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_invoice
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.external_layout_standard_official_sale
 msgid "Page: <span class=\"page\"/> / <span class=\"topage\"/>"
 msgstr "صفحه: <span class=\"page\"/> / <span class=\"topage\"/>"
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.report,name:l10n_ir_account_reports.action_report_invoices_official
-msgid "Quotation / Official Invoice"
-msgstr "پیش فاکتور / فاکتور رسمی"
 
 #. module: l10n_ir_account_reports
 #: model:ir.actions.report,name:l10n_ir_account_reports.action_report_sale_official
@@ -464,96 +195,11 @@ msgid "Quotation for the sale products and services"
 msgstr "پیش فاکتور فروش کالا و خدمات"
 
 #. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_1
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_1_t
-msgid "Regulators"
-msgstr "تنظیم کننده"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.account_reports_configs_view_form
-msgid "Report Setting"
-msgstr "تنظیمات گزارش"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_2
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_config_2_t
-msgid "Seconder"
-msgstr "تأیید کننده"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "Seller stamp and signature:"
 msgstr "مهر و امضاء فروشنده:"
 
 #. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Sub Amount"
-msgstr "مبلغ جزء"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Subsidiary Accounting Document"
-msgstr "سند خلاصه حسابداری در سطح کل و معین"
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.report,name:l10n_ir_account_reports.account_subsidiary_invoices_cover_document
-msgid "Subsidiary Accounting Document Report"
-msgstr "چاپ سند خلاصه کل و معین"
-
-#. module: l10n_ir_account_reports
 #: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_sale_document
 msgid "This quotation is valid until:"
 msgstr "اعتبار این پیش فاکتور تا تاریخ:"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Total"
-msgstr "جمع کل"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "Total in words"
-msgstr "جمع کل به حروف"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_account_account__partner_print
-msgid "account report print ?"
-msgstr "چاپ حساب در پرینت"
-
-#. module: l10n_ir_account_reports
-#: model:ir.actions.act_window,name:l10n_ir_account_reports.action_account_report_config_action_inherit
-msgid "account reports configs"
-msgstr "تنظیمات گزارش"
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_entry_number
-msgid "entry_number in the reports"
-msgstr "شماره سند درگزارش "
-
-#. module: l10n_ir_account_reports
-#: model:ir.model.fields,field_description:l10n_ir_account_reports.field_res_company__account_reports_product_id
-msgid "product id colume"
-msgstr "ستون کد کالا در گزارش"
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_document
-msgid "جمع کل:"
-msgstr ""
-
-#. module: l10n_ir_account_reports
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_detail_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_ledger_invoice_cover_template
-#: model_terms:ir.ui.view,arch_db:l10n_ir_account_reports.report_subsidiary_invoice_cover_template
-msgid "ریال"
-msgstr ""

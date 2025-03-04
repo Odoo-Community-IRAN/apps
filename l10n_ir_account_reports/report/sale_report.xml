@@ -29,6 +29,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                 </div>
                 <t t-set="display_discount" t-value="any(l.discount for l in o.order_line.invoice_lines)"/>
                 <t t-set="sum_total_price" t-value="0"/>
+                <t t-set="sum_price_unit" t-value="0"/>
                 <t t-set="sum_total_discount" t-value="0"/>
                 <t t-set="sum_after_discount" t-value="0"/>
                 <t t-set="sum_taxes" t-value="0"/>
@@ -58,8 +59,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                 <span>Tax</span>
                             </th>
                             <th name="th_subtotal" class="text-left font-weight-light">
-                            <span groups="account.group_show_line_subtotals_tax_excluded">The sum of the total amount plus the sum of taxes</span>
-                            <span groups="account.group_show_line_subtotals_tax_included">Total Price</span>
+                            <span>Total Price</span>
                             </th>
                         </tr>
                     </thead>
@@ -86,10 +86,11 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                     </td>
                                     <!--واحد اندازه گیری-->
                                     <td class="text-left">
-                                        <span t-field="line.product_uom" groups="uom.group_uom"/>
+                                        <span t-field="line.product_uom"/>
                                     </td>
                                     <!--قیمت واحد-->
                                     <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
+                                    <t t-set="sum_price_unit" t-value="sum_price_unit + line.price_unit"/>
                                     <span class="text-nowrap" t-field="line.price_unit"
                                         t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
                                     </td>
@@ -108,8 +109,9 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                             t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
                                     </td>
                                     <!--مبلغ کل پس از تخفیف-->
+                                    <t t-set="sum_after_discount" t-value="sum_after_discount + line.price_subtotal"/>
                                     <td class="text-right o_price_total">
-                                        <span class="text-nowrap" t-field="line.price_total"/>
+                                        <span class="text-nowrap" t-field="line.price_subtotal"/>
                                     </td>
                                     <!--مالیات-->
                                     <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
@@ -119,8 +121,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                                     </td>
                                     <!--مبلغ کل با تخفیف و مالیات-->
                                     <td t-attf-class="text-right {{ 'd-none d-md-table-cell' if report_type == 'html' else '' }}">
-                                        <t t-set="sum_after_discount" t-value="sum_after_discount + line.price_subtotal"/>
-                                        <span class="text-nowrap" t-field="line.price_subtotal"
+                                        <span class="text-nowrap" t-field="line.price_total"
                                             t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
                                     </td>
                                 </t>
@@ -150,6 +151,12 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                         <tr>
                             <td colspan="5" class="text-center">
                                 <strong>Total</strong>
+                            </td>
+                            <td class="text-right sum_price_unit">
+                                <strong>
+                                    <span class="text-nowrap" t-esc="sum_price_unit"
+                                        t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+                                </strong>
                             </td>
                             <td class="text-right sum_total_price">
                                 <strong>
