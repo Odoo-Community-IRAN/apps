@@ -24,6 +24,7 @@
             'persian_calendar/static/src/js/list.js',
             'persian_calendar/static/src/js/datetime_field.js',
             'persian_calendar/static/src/js/jdatetime.js',
+            'persian_calendar/static/src/js/kanban.js',
         ]
     }
 }
