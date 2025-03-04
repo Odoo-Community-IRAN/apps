@@ -10,7 +10,7 @@
     'website': "https://odoo-community.ir/",
     'category': 'Localization/Iran',
     'images': ['static/description/theme_screenshot.jpg'],
-    'version': '1.0.3',
+    'version': '17.0.1.0.4',
     'license': 'LGPL-3',
     'depends': ['base', 'web', 'event'],
     'data':[
