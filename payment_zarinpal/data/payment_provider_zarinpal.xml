@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <data noupdate="1">
+        <record id="payment_provider_zarinpal" model="payment.provider">
+            <field name="name">Zarinpal</field>
+            <field name="display_as">Zarinpal</field>
+            <field name="image_128"
+                type="base64"
+                file="payment_zarinpal/static/src/img/zarinpal.png"/>
+            <field name="module_id" ref="base.module_payment_zarinpal"/>
+            <field name="code">zarinpal</field>
+            <field name="redirect_form_view_id" ref="redirect_form"/>
+            <field name="allow_tokenization">False</field>
+        </record>
+    </data>
+</odoo>
