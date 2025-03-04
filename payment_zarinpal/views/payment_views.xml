@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <record id="payment_acquirer_form" model="ir.ui.view">
+        <field name="name">zarinpal provider Form</field>
+        <field name="model">payment.provider</field>
+        <field name="inherit_id" ref="payment.payment_provider_form"/>
+        <field name="arch" type="xml">
+            <group name="provider_credentials" position='inside'>
+                <group invisible="code != 'zarinpal'" >
+                    <field name="zarinpal_merchant_id" />
+                    <field name="zarinpal_account_id" />
+                    <field name="zarinpal_api_key" />
+                </group>
+            </group>
+        </field>
+    </record>
+</odoo>
