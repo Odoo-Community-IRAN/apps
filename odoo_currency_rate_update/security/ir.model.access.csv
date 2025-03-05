@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_config_settings_user,res.config.settings user,model_res_config_settings,base.group_user,1,0,0,0
+access_res_config_settings_manager,res.config.settings manager,model_res_config_settings,base.group_system,1,1,1,1
+access_transaction_type_config,access.transaction.type.config,model_transaction_type_config,base.group_user,1,1,1,1

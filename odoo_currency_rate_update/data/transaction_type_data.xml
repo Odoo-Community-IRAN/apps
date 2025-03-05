@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <data noupdate="1">
+        <record id="transaction_type_purchase" model="transaction.type.config">
+            <field name="name">Purchase</field>
+            <field name="transaction_type">purchase</field>
+        </record>
+
+        <record id="transaction_type_sale" model="transaction.type.config">
+            <field name="name">Sale</field>
+            <field name="transaction_type">sale</field>
+        </record>
+    </data>
+</odoo>
