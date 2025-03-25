@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <template id="external_layout_standard_official_sale">
+        <div t-attf-class="header officialReport o_company_#{company.id}_layout">
+            <!--header-->
+            <div class="roww">
+                <div class="columnn hasan-l">
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
+                        style="max-height: 45px;" alt="Logo"/>
+                </div>
+                <div class="columnn hasan">
+                    <h6 class="m-0 text-center font-weight-light" style="font-size: 11pt">
+                        <span t-if="o.state == 'draft' or o.state == 'sent'">Quotation for the sale products and services</span>
+                        <span t-if="o.state == 'sale' or o.state == 'done'">Invoice for the sale products and services</span>
+                        <span t-if="o.state == 'cancel'">Invoice for the sale products and services - Cancelled</span>
+                    </h6>
+                </div>
+                <div class="columnn hasan-r">
+                    <div class="roww">
+                        <span class="w-100">Invoice#: </span>
+                        <span class="label label-default">
+                            <t t-if="o.name != '/'">
+                                <t t-esc="o.name"/>
+                            </t>
+                        </span>
+                    </div>
+                    <div class="roww">
+                        <span>Date: </span>
+                        <span class="d-inline-block p-1" t-field="o.date_order" 
+                            t-options="{'widget': 'date', 'format': 'yyyy/MM/dd'}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div t-attf-class="article o_report_layout_standard officialReport font-weight-lighter o_company_#{company.id}_layout"
+            t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id"
+            t-att-data-oe-lang="o and o.env.context.get('lang')" style="font-size: 10pt; font-weight: 300"
+        >
+            <!--seller-->
+            <div class="container font-weight-light" style="background-color: rgba(150,150,150,0.6);">
+                <div class="border d-block p-1 row text-center">
+                    <span>Seller Information</span>
+                </div>
+            </div>
+            <!--seller info-->
+            <div class="border border-top-0 pb-1 pt-1 container">
+                <div class="roww">
+                    <div class="columnn-5 hasan-l">
+                        <div class="roww">
+                            <span>Name of Real/Legal Person: </span>
+                            <span t-field="company.partner_id.name"/>
+                            </div>
+                            <div class="roww">
+                                <span>Full Address:</span>
+                                <span class="w-auto" style="white-space: nowrap;" t-field="company.state_id"/>
+                                <span class="w-auto" style="white-space: nowrap;" t-field="company.city"/>
+                                <span class="w-auto" style="white-space: nowrap;" t-field="company.street"/> -
+                                <span class="w-auto" style="white-space: nowrap;" t-field="company.street2"/>
+                            </div>
+                        </div>
+                        <div class="columnn-3 hasan">
+                            <div class="roww hasan-l">
+                                <span>Vat Code: </span>
+                                <span class="d-inline-block min-w-12mm" t-field="company.vat"/>
+                            </div>
+                            <div class="roww hasan-l">
+                                <span>Zip Code: </span>
+                                <span class="d-inline-block min-w-12mm" t-field="company.zip"/>
+                            </div>
+                        </div>
+                        <div class="columnn-4 hasan-r">
+                            <div class="roww">
+                                <span>National Code/Company Registry: </span>
+                                <span t-field="company.company_registry"/>
+                            </div>
+                            <div class="roww">
+                                <span>Phone: </span>
+                                <span class="d-inline-block w-auto min-w-12mm" style="white-space: nowrap; direction: ltr;" t-field="company.phone"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--customer-->
+                <div class="container font-weight-light" style="background-color: rgba(150,150,150,0.6);">
+                <div class="border border-top-0 d-block p-1 row text-center">
+                    <span>Customer Information</span>
+                </div>
+            </div>
+            <!--customer-->
+            <div class="border border-top-0 pb-1 pt-1 container">
+                <div class="roww">
+                    <div class="columnn-5 hasan-l">
+                        <div class="roww">
+                            <span>Name of Real/Legal Person: </span>
+                            <span t-field="o.partner_id.name"/>
+                        </div>
+                        <div class="roww">
+                            <span>Full Address:</span>
+                            <span class="w-auto" style="white-space: nowrap;" t-field="o.partner_id.state_id"/>
+                            <span class="w-auto" style="white-space: nowrap;" t-field="o.partner_id.city"/>
+                            <span class="w-auto" style="white-space: nowrap;" t-field="o.partner_id.street"/> -
+                            <span class="w-auto" style="white-space: nowrap;" t-field="o.partner_id.street2"/>
+                        </div>
+                    </div>
+                    <div class="columnn-3 hasan">
+                        <div class="roww hasan-l">
+                            <span>Vat Code: </span>
+                            <span class="d-inline-block min-w-12mm" t-field="o.partner_id.vat"/>
+                        </div>
+                        <div class="roww hasan-l">
+                            <span>Zip Code: </span>
+                            <span class="d-inline-block min-w-12mm" t-field="o.partner_id.zip"/>
+                        </div>
+                    </div>
+                    <div class="columnn-4 hasan-r">
+                        <div class="roww">
+                            <span>National Code/Company Registry: </span>
+                            <!-- <span class="d-inline-block min-w-12mm" t-field="o.partner_id.l10n_ir_national_code"/> -->
+                            <span t-field="o.partner_id.vat"/>
+                        </div>
+                        <div class="roww">
+                            <span>Phone: </span>
+                            <span class="d-inline-block w-auto min-w-12mm" style="white-space: nowrap; direction: ltr;" t-field="o.partner_id.phone"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <t t-raw="0"/>
+        </div>
+        <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout text-600">
+            <div class="text-center pt-1" style="border-top: 1px solid #c5c5c5; font-size:9pt">
+                <div t-if="report_type == 'pdf'" class="text-muted">
+                    Page: <span class="page"/> / <span class="topage"/>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="external_layout_official_sale">
+        <t t-if="not o" t-set="o" t-value="doc"/>
+        <t t-if="not company">
+            <!-- Multicompany -->
+            <t t-if="company_id">
+                <t t-set="company" t-value="company_id"/>
+            </t>
+            <t t-elif="o and 'company_id' in o and o.company_id.sudo()">
+                <t t-set="company" t-value="o.company_id.sudo()"/>
+            </t>
+            <t t-else="else">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+        </t>
+        <t t-call="l10n_ir_account_reports.external_layout_standard_official_sale">
+            <t t-raw="0"/>
+        </t>
+    </template>
+</odoo>
