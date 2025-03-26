@@ -1,0 +1,188 @@
+/* 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+*/
+div[data-oe-lang='fa_IR'] {
+    font-family: IRANSans;
+}
+
+div[data-oe-lang]:not([data-oe-lang='fa_IR']) {
+    font-family: IRANSansEN;
+}
+
+.header {
+    .iranian_layout {
+        padding-bottom: 2mm;
+        margin-bottom: 0;
+        img {
+            margin-bottom: 1mm;
+        }
+    }
+}
+.iranian_layout {
+    /*common styles*/
+    font-size: 3.5mm;
+    .fa.fa-phone:before {
+        transform: rotateY(180deg);
+        display: block;
+    }
+    p {
+        margin: 0;
+    }
+    /*address styles*/
+    .company_address {
+        float: left;
+        > * {
+            float: left;
+            margin-right: 1mm;
+        }
+    }
+    div[name="information_block"] {
+        strong {
+            font-weight: normal;
+        }
+    }
+    .company_address,
+    div[name="information_block"],
+    div[name="div_incoming_address"],
+    div[name="div_outgoing_address"],
+    div[name="address"] {
+        font-size: 3.5mm;
+        font-weight: 200;
+        padding-top: 30mm;
+        padding-bottom: 10mm;
+    }
+    /*content styles*/
+    .page {
+        padding-top: 2mm;
+        font-size: 3.5mm;
+        /*report ID or Number*/
+        > h3,
+        > h2,
+        > h1 {
+            font-size: 4mm;
+            float: left;
+            width: auto;
+            white-space: nowrap;
+            margin-bottom: 4mm;
+            margin-top: 1mm;
+            /*extra info like date and seller info*/
+            + .row {
+                float: right;
+            }
+        }
+        strong {
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        table {
+            thead {
+                tr:nth-child(odd) {
+                    background-color: #dddddd;
+                }
+                th {
+                    font-weight: normal;
+                }
+            }
+        }
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        #informations,
+        > .row,
+        > .row.mt32.mb32,
+        > .row.mt48.mb32 {
+            width: auto;
+            margin: 0;
+            > div {
+                width: auto !important;
+                flex: 0 0 auto;
+                white-space: nowrap;
+                display: block;
+                padding: 0 !important;
+                float: right;
+                font-weight: 300;
+                max-width: none;
+                margin-bottom: 3mm;
+                margin-top: 1mm;
+                strong {
+                    float: left;
+                }
+                > strong {
+                    margin-left: 3mm;
+                }
+                span,
+                p {
+                    font-weight: 200;
+                }
+                > span,
+                > p {
+                    float: left;
+                    margin-left: 1mm !important;
+                }
+                br {
+                    display: none;
+                }
+                /*this address styles goes for purchase report*/
+                &[name="div_incoming_address"],
+                &[name="div_outgoing_address"],
+                &[name="address"] {
+                    font-size: 3.5mm;
+                    font-weight: 200;
+                    padding-top: 2mm;
+                    padding-bottom: 2mm;
+                    max-width: 50%;
+                    white-space: normal;
+                }
+                &[name="information_block"] {
+                    font-size: 3.5mm;
+                    font-weight: 200;
+                    padding-top: 2mm;
+                    padding-bottom: 2mm;
+                    strong {
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+        > .row{
+            width: 100%;
+        }
+        strong + span,
+        strong + p {
+            font-weight: 200;
+        }
+        address {
+            float: left;
+        }
+        /*purchase report partner info*/
+        div[name="partner_header"] {
+            float: left;
+            address {
+                > * {
+                    clear: both;
+                }
+            }
+            > * {
+                clear: both;
+            }
+        }
+    }
+    .o_main_table {
+        border: thin solid #dee2e6 !important;
+        border-top: none;
+    }
+    div#total table tr.o_subtotal td,
+    div#total table tr.o_total td {
+        border-color: #dee2e6 !important;
+    }
+}
+
+.footer.iranian_layout * {
+  margin-bottom: 0;
+}
+
+.decrease_padding{
+    padding: 4px !important;
+}
