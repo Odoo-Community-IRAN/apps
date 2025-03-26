@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+        <!-- Fiscal Position Templates -->
+        <record
+        id="fiscal_position_template_1"
+        model="account.fiscal.position.template"
+    >
+            <field name="name">Iran</field>
+            <field name="auto_apply" eval="True" />
+            <field name="country_id" ref="base.ir" />
+            <field name="chart_template_id" ref="l10n_ir_chart_template" />
+        </record>
+
+
+        <record
+        id="fiscal_position_tax_template_1"
+        model="account.fiscal.position.tax.template"
+    >
+            <field name="position_id" ref="fiscal_position_template_1" />
+            <field name="tax_src_id" ref="ir_sale_tax_10" />
+            <field name="tax_dest_id" ref="ir_purchase_tax_10" />
+        </record>
+</odoo>

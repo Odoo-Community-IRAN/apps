@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+        <!-- Account Tax Group -->
+        <record id="ir_tax_group_10" model="account.tax.group">
+            <field name="name">VAT 10%</field>
+        </record>
+        <record id="ir_tax_group_0" model="account.tax.group">
+            <field name="name">VAT 0%</field>
+        </record>
+        <record id="ir_tax_group_exempted" model="account.tax.group">
+            <field name="name">VAT Exempted</field>
+        </record>
+</odoo>

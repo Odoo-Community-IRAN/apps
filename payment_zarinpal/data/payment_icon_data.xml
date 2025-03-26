@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <record id="payment_icon_shaparak" model="payment.icon">
+        <field name="name">Shaparak</field>
+        <field name="image" type="base64" file="payment_alsatpardakht/static/src/img/shaparak.png"/>
+    </record>
+
+    <record id="payment_icon_asp" model="payment.icon">
+        <field name="name">Alsatpardakht</field>
+        <field name="image" type="base64" file="payment_alsatpardakht/static/src/img/alsatpardakht_logo.png"/>
+    </record>
+</odoo>

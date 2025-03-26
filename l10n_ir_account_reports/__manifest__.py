@@ -7,7 +7,11 @@
     "summary": """Odoo Iran Print""",
     "description": """Odoo Iran Print""",
     "category": "Accounting/Localizations/Reporting",
+<<<<<<< HEAD
     "version": "1.0.1",
+=======
+    "version": "16.0.1.0.0",
+>>>>>>> 16.0
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir",
     "license": "AGPL-3",
