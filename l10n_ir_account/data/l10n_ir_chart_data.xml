@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+-->
+<odoo>
+    <record id="l10n_ir_chart_template" model="account.chart.template">
+        <field name="name">Iran Chart Of Account</field>
+        <field name="bank_account_code_prefix">1111</field>
+        <field name="cash_account_code_prefix">1113</field>
+        <field name="transfer_account_code_prefix">1114</field>
+        <field name="code_digits">5</field>
+        <field name="currency_id" ref="base.IRR" />
+    </record>
+</odoo>
