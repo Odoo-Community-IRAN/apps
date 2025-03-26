@@ -26,7 +26,7 @@ msgstr "کد"
 #: code:addons/zarads/payment_zarinpal/models/payment_transaction.py:0
 #, python-format
 msgid "No transaction found matching reference."
-msgstr ""
+msgstr "هیچ تراکنشی مرجع منطبق پیدا نشد"
 
 #. module: payment_zarinpal
 #: model:ir.model,name:payment_zarinpal.model_account_payment_method
@@ -46,18 +46,18 @@ msgstr "تراکنش پرداخت"
 #. module: payment_zarinpal
 #: model:ir.model.fields,help:payment_zarinpal.field_payment_provider__zarinpal_merchant_id
 msgid "The ID solely used to identify the account with zarinpal"
-msgstr ""
+msgstr "شناسه فقط برای شناسایی حساب با zarinpal استفاده می شود"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,help:payment_zarinpal.field_payment_provider__zarinpal_account_id
 msgid ""
 "The ID solely used to identify the country-dependent shop with zarinpal"
-msgstr ""
+msgstr "شناسه فقط برای شناسایی فروشگاه وابسته به کشور با زرین پال استفاده می شود"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,help:payment_zarinpal.field_payment_provider__code
 msgid "The technical code of this payment provider."
-msgstr ""
+msgstr "کد فنی این ارائه دهنده پرداخت"
 
 #. module: payment_zarinpal
 #. odoo-python
@@ -65,7 +65,7 @@ msgstr ""
 #: code:addons/zarads/payment_zarinpal/models/payment_transaction.py:0
 #, python-format
 msgid "Transaction failed or canceled by user"
-msgstr ""
+msgstr "تراکنش ناموفق یا لغو شده"
 
 #. module: payment_zarinpal
 #. odoo-python
@@ -76,6 +76,8 @@ msgid ""
 "Transaction failed.\n"
 "Status: "
 msgstr ""
+"تراکنش ناموفق.\n"
+"وضعیت: "
 
 #. module: payment_zarinpal
 #. odoo-python
@@ -83,7 +85,7 @@ msgstr ""
 #: code:addons/zarads/payment_zarinpal/models/payment_transaction.py:0
 #, python-format
 msgid "Transaction submitted : "
-msgstr ""
+msgstr "تراکنش ثبت شد"
 
 #. module: payment_zarinpal
 #. odoo-python
@@ -94,16 +96,18 @@ msgid ""
 "Transaction success.\n"
 "RefID: "
 msgstr ""
+"تراکنش موفق.\n"
+"شماره مرجع: "
 
 #. module: payment_zarinpal
 #: model_terms:payment.provider,done_msg:payment_zarinpal.payment_provider_zarinpal
 msgid "Your payment has been successfully processed."
-msgstr ""
+msgstr "پرداخت با موفقیت انجام شد"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,field_description:payment_zarinpal.field_payment_transaction__zarinpal_signature
 msgid "signature"
-msgstr ""
+msgstr "امضاء"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,field_description:payment_zarinpal.field_payment_transaction__zarinpal_uuid
@@ -115,22 +119,22 @@ msgstr ""
 #: model:ir.model.fields.selection,name:payment_zarinpal.selection__payment_provider__code__zarinpal
 #: model:payment.provider,name:payment_zarinpal.payment_provider_zarinpal
 msgid "zarinpal"
-msgstr ""
+msgstr "زرین پال"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,field_description:payment_zarinpal.field_payment_provider__zarinpal_api_key
 msgid "zarinpal API Key"
-msgstr ""
+msgstr "کد درگاه پرداخت"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,field_description:payment_zarinpal.field_payment_provider__zarinpal_account_id
 msgid "zarinpal Account ID"
-msgstr ""
+msgstr "ID کاربری"
 
 #. module: payment_zarinpal
 #: model:ir.model.fields,field_description:payment_zarinpal.field_payment_provider__zarinpal_merchant_id
 msgid "zarinpal Merchant ID"
-msgstr ""
+msgstr "كد ۳۶ كاراكتری اختصاصی پذیرنده"
 
 #. module: payment_zarinpal
 #: model_terms:payment.provider,auth_msg:payment_zarinpal.payment_provider_zarinpal

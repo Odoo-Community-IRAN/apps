@@ -12,7 +12,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="active">True</field>
         <field name="support_tokenization">False</field>
         <field name="support_express_checkout">False</field>
-        <field name="image" type="base64" file="payment_zarinpal/static/src/img/zarinpal_icon.png"/>
+        <field name="image" type="base64" file="payment_zarinpal/static/src/img/zarinpal.png"/>
         <field name="supported_country_ids"
                eval="[Command.set([
                          ref('base.ir'),
@@ -30,7 +30,7 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="code">zarinpal</field>
         <field name="image_128"
                type="base64"
-               file="payment_zarinpal/static/src/img/zarinpal_icon.png"/>
+               file="payment_zarinpal/static/src/img/zarinpal.png"/>
         <field name="redirect_form_view_id" ref="redirect_form"/>
         <field name="allow_tokenization">True</field>
         <field name="payment_method_ids" eval="[Command.set([ref('payment_zarinpal.payment_method_zarinpal'), ])]" />
