@@ -16,6 +16,6 @@ p, a:not(.fa){
 #oe_main_menu_navbar,.nav-link {
 	font-family: Vazir !important;	
 }
-.o_account_reports_body,.o_account_report_column_value,.o_account_report_line,.o_account_reports_page table > tbody > tr > td.number{
+.o_account_reports_body,.o_account_report_column_value,.o_account_report_line,.o_account_reports_page table > tbody > tr > td.number,.popover{
 	font-family: Vazir !important;	
 }

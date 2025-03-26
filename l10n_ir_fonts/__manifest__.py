@@ -4,18 +4,11 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 {
     'name': "Persian font",
-
-    'summary': """
-        change defult font to vazir persian font""",
-
-    'description': """
-        Change the defult persian font of the all interfaces with a beautiful one preferred by the Persian user
- ,
-    """,
+    'summary': """change defult font to vazir persian font""",
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     "category": "Localization/Iran",
-    "version": "1.1.0",
+    "version": "1.1.1",
     'depends': ['web'],
     'license': 'LGPL-3',
     'assets': {
