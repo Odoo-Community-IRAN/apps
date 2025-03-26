@@ -8,7 +8,7 @@
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     "category": "Localization/Iran",
-    "version": "1.1.0",
+    "version": "1.1.1",
     'depends': ['web'],
     'license': 'LGPL-3',
     'assets': {
