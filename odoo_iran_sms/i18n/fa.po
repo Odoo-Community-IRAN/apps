@@ -1,0 +1,193 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_iran_sms
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e-20241002\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-03 07:03+0000\n"
+"PO-Revision-Date: 2025-03-03 07:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__api_key
+msgid "Api Key"
+msgstr "کلید دسترسی"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__create_uid
+msgid "Created by"
+msgstr "ایجاد شده توسط"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__create_date
+msgid "Created on"
+msgstr "ایجاد شده در"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__credit
+msgid "Credit"
+msgstr "اعتبار"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__display_name
+msgid "Display Name"
+msgstr "نام نمایشی"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error
+#: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.actions.act_window,name:odoo_iran_sms.kavenegar_sms_provider_action_window
+msgid "Kavenegar SMS Providers"
+msgstr "ارائه دهنده سرویس پیامک کاوه نگار"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__write_uid
+msgid "Last Updated by"
+msgstr "آخرین بروزرسانی توسط"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__write_date
+msgid "Last Updated on"
+msgstr "آخرین بروزرسانی در"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__latest_credit_update
+msgid "Latest Credit Update"
+msgstr "آخرین بروزرسانی اعتبار"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_sms_sms__messageid
+msgid "Messageid"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_ids
+msgid "Messages"
+msgstr "پیام ها"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__name
+#: model_terms:ir.ui.view,arch_db:odoo_iran_sms.kavenegar_sms_provider_form_view
+msgid "Name"
+msgstr "نام"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model:ir.model,name:odoo_iran_sms.model_sms_sms
+msgid "Outgoing SMS"
+msgstr "پیامک در صف"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: odoo_iran_sms
+#: model_terms:ir.ui.view,arch_db:odoo_iran_sms.kavenegar_res_config_settings_form_view_inherit
+msgid "SMS Provider"
+msgstr "ارائه دهنده پیامک"
+
+#. module: odoo_iran_sms
+#: model:ir.actions.server,name:odoo_iran_sms.ir_cron_sms_status_updater_ir_actions_server
+msgid "SMS Status Updater"
+msgstr "به روزرسان وضعیت پیامک"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__sender_number
+msgid "Sender Number"
+msgstr "شماره فرستنده"
+
+#. module: odoo_iran_sms
+#: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__sequence
+msgid "Sequence"
+msgstr "ترتیب"
+
+#. module: odoo_iran_sms
+#: model_terms:ir.ui.view,arch_db:odoo_iran_sms.kavenegar_res_config_settings_form_view_inherit
+msgid "Set SMS Provider"
+msgstr "تنظیم ارائه دهنده پیامک"
+
+#. module: odoo_iran_sms
+#: model_terms:ir.ui.view,arch_db:odoo_iran_sms.kavenegar_sms_provider_form_view
+msgid "Update Credit"
+msgstr "بروزرسانی اعتبار"
+
+#. module: odoo_iran_sms
+#: model:ir.model,name:odoo_iran_sms.model_kavenegar_sms_provider
+msgid "kavenegar.sms.provider"
+msgstr ""

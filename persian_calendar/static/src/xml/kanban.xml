@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_event_kanban_js_inherit" model="ir.ui.view">
+        <field name="name">event.event.kanban</field>
+        <field name="model">event.event</field>
+        <field name="priority">1</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="event.view_event_kanban"/>
+        <field name="arch" type="xml">
+            <xpath expr="." position="replace">
+               <kanban class="o_event_kanban_view" default_group_by="stage_id" quick_create_view="event.event_event_view_form_quick_create" sample="1">
+                <field name="user_id"/>
+                <field name="name"/>
+                <field name="stage_id" options='{"group_by_tooltip": {"description": "Description"}}'/>
+                <field name="address_id"/>
+                <field name="date_begin"/>
+                <field name="date_end"/>
+                <field name="seats_reserved"/>
+                <field name="seats_used"/>
+                <field name="seats_taken"/>
+                <field name="legend_blocked"/>
+                <field name="legend_normal"/>
+                <field name="legend_done"/>
+                <field name="activity_ids"/>
+                <field name="activity_state"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="d-flex flex-column p-0 oe_kanban_card oe_kanban_global_click">
+                            <div class="o_kanban_content p-0 m-0 position-relative row d-flex flex-fill">
+                                <div class="col-4 text-bg-primary p-2 text-center d-flex flex-column justify-content-center">
+                                    <div t-esc="luxon.DateTime.fromISO(record.date_begin.raw_value).reconfigure({ outputCalendar: 'persian', locale: 'fa' }).toLocaleString({day: 'numeric'})" class="o_event_fontsize_20"/>
+                                    <div>
+                                        <t t-esc="luxon.DateTime.fromISO(record.date_begin.raw_value).reconfigure({ outputCalendar: 'persian', locale: 'fa' }).toLocaleString({year: 'numeric', month: 'long'})"/>
+                                    </div>
+                                    <div><t t-esc="luxon.DateTime.fromISO(record.date_begin.raw_value).toFormat('t')"/></div>
+                                        <div t-if="record.date_begin.raw_value !== record.date_end.raw_value">
+                                            <i class="oi oi-arrow-right me-2 o_event_fontsize_09" title="End date"/>
+                                            <t t-esc="luxon.DateTime.fromISO(record.date_end.raw_value).reconfigure({ outputCalendar: 'persian', locale: 'fa' }).toLocaleString({month: 'long', day: 'numeric'})"/>
+                                        </div>
+                                </div>
+                                <div class="col-8 py-2 px-3 d-flex flex-column justify-content-between pt-3">
+                                    <div>
+                                        <div class="o_kanban_record_title o_text_overflow" t-att-title="record.name.value">
+                                            <field name="name"/>
+                                        </div>
+                                        <div t-if="record.address_id.value" class="d-flex ps-1">
+                                            <i class="fa fa-map-marker mt-1 me-2 text-center ps-1" title="Location"/>
+                                            <span t-esc="record.address_id.value" class="ms-1"/>
+                                        </div>
+                                        <div class="d-flex ps-1">
+                                            <i class="fa fa-group mt-1 me-2 text-center" title="Attendees"/>
+                                            <span t-out="record.seats_taken.raw_value" class="me-1"/> Attendees
+                                        </div>
+                                    </div>
+                                    <div class="o_kanban_record_bottom">
+                                        <div class="oe_kanban_bottom_left">
+                                            <field name="activity_ids" widget="kanban_activity"/>
+                                        </div>
+                                        <div class="oe_kanban_bottom_right">
+                                            <field name="kanban_state" widget="state_selection"/>
+                                            <field name="user_id" widget="many2one_avatar_user"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+            </xpath>
+        </field>
+    </record> 
+</odoo>
