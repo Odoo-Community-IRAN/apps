@@ -5,11 +5,12 @@
 {
     "name": "Persian Translator",
     "summary": """Persian Translator""",
+    "description": """Persian Translator""",
     "author": "Odoo Community Iran",
     "license": "AGPL-3",
     "website": "https://odoo-community.ir/",
     "category": "Technical",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "depends": ["base"],
     "data": [
         "security/ir.model.access.csv",

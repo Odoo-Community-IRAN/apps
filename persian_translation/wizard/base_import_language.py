@@ -39,6 +39,7 @@ class BaseLanguageImport(models.TransientModel):
             file_path = os.path.join(module_path, "i18n_po")
             file_path = file_path.replace("wizard/", "")
             translation_importer = TranslationImporter(self.env.cr, verbose=True)
+            self.log_messages = "<p> ...Start import translation <p>"
 
             for subdir, _, files in os.walk(file_path):
                 for file in files:
@@ -58,7 +59,12 @@ class BaseLanguageImport(models.TransientModel):
                                 % po_file
                             }
                         )
-
+            self.write(
+                    {
+                        "log_messages": str(self.log_messages)
+                        + "<p> Import translation file for language fa_IR successful </p>"
+                    }
+                )
             translation_importer.save(overwrite=True, force_overwrite=True)
             self.env.cr.commit()
         except Exception as ex:
