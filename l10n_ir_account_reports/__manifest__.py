@@ -3,11 +3,11 @@
 # @author: Odoo Community Iran (https://odoo-community.ir/
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 {
-    "name": "Odoo Iran Print",
-    "summary": """Odoo Iran Print""",
-    "description": """Odoo Iran Print""",
+    "name": "Odoo Iran Account Report",
+    "summary": """Odoo Iran Account Report""",
+    "description": """Odoo Iran Account Report""",
     "category": "Accounting/Localizations/Reporting",
-    "version": "16.0.1.0.0",
+    "version": "1.0.1",
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir",
     "license": "AGPL-3",
