@@ -11,7 +11,7 @@
     "summary": """iran accounting chart and localization.""",
     "description": """iran accounting chart and localization.""",
     "license": "AGPL-3",
-    "website": "https://github.com/OCA/l10n-iran",
+    "website": "https://odoo-community.ir",
     "depends": ["account"],
     "data": [
         "data/res_currency_data.xml",
