@@ -4,6 +4,7 @@
 {
     "name": "Iran - Accounting",
     "summary": """Iran accounting chart and localization.""",
+    "description": """Iran accounting chart and localization.""",
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     "category": "Accounting/Localizations/Account Charts",
