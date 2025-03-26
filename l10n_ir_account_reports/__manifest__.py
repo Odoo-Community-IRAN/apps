@@ -7,11 +7,7 @@
     "summary": """Odoo Iran Print""",
     "description": """Odoo Iran Print""",
     "category": "Accounting/Localizations/Reporting",
-<<<<<<< HEAD
     "version": "1.0.1",
-=======
-    "version": "1.0.0",
->>>>>>> b5d3c4b ([FIX] force __manifest__ 18.0 version error)
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir",
     "license": "AGPL-3",
