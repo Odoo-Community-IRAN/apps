@@ -18,7 +18,7 @@ msgstr ""
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "نیاز به اقدام"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__api_key
@@ -28,7 +28,7 @@ msgstr "کلید دسترسی"
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "تعداد پیوست"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__create_uid
@@ -53,17 +53,17 @@ msgstr "نام نمایشی"
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "دنبال کنندگان"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "دنبال کنندگان (پارتنر)"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "پیام دارد"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__id
@@ -79,12 +79,12 @@ msgstr ""
 #: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error
 #: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "اگر علامت زده شود، برخی از پیام ها دارای خطای تحویل هستند."
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "آیا دنبال کننده است"
 
 #. module: odoo_iran_sms
 #: model:ir.actions.act_window,name:odoo_iran_sms.kavenegar_sms_provider_action_window
@@ -109,12 +109,12 @@ msgstr "آخرین بروزرسانی اعتبار"
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "خطای تحویل پیام"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_sms_sms__messageid
 msgid "Messageid"
-msgstr ""
+msgstr "شناسه پیام"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_ids
@@ -130,22 +130,22 @@ msgstr "نام"
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "تعداد اقدام ها"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "تعداد خطاها"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "تعداد پیام هایی که نیاز به اقدام دارند"
 
 #. module: odoo_iran_sms
 #: model:ir.model.fields,help:odoo_iran_sms.field_kavenegar_sms_provider__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "تعداد پیام های دارای خطای تحویل"
 
 #. module: odoo_iran_sms
 #: model:ir.model,name:odoo_iran_sms.model_sms_sms
@@ -155,7 +155,7 @@ msgstr "پیامک در صف"
 #. module: odoo_iran_sms
 #: model:ir.model.fields,field_description:odoo_iran_sms.field_kavenegar_sms_provider__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "خطای تحویل پیامک"
 
 #. module: odoo_iran_sms
 #: model_terms:ir.ui.view,arch_db:odoo_iran_sms.kavenegar_res_config_settings_form_view_inherit
