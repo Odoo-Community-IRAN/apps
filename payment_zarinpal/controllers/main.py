@@ -14,12 +14,15 @@ class PaymentZarinpalController(http.Controller):
     _return_url = '/payment/zarinpal/return/<string:uuid>'
     _webhook_url = '/payment/zarinpal/webhook'
 
-    @http.route(_return_url, type='http', auth='public', methods=['GET'], save_session=False)
+    @http.route(_return_url, type='http', auth='public',
+                methods=['GET'], save_session=False)
     def zarinpal_return(self, **data):
-        request.env['payment.transaction'].sudo()._handle_notification_data('zarinpal', data)
+        request.env['payment.transaction'].sudo(
+        )._handle_notification_data('zarinpal', data)
         return request.redirect('/payment/status')
 
-    @http.route(_webhook_url, type='http', auth='public', methods=['POST'], csrf=False)
+    @http.route(_webhook_url, type='http', auth='public',
+                methods=['POST'], csrf=False)
     def zarinpal_webhook(self, **data):
         state_pol = data.get('state_pol')
         if state_pol == '4':
@@ -43,7 +46,8 @@ class PaymentZarinpalController(http.Controller):
         }
 
         try:
-            request.env['payment.transaction'].sudo()._handle_notification_data('zarinpal', data)
+            request.env['payment.transaction'].sudo(
+            )._handle_notification_data('zarinpal', data)
         except ValidationError:
             _logger.warning(
                 'zarinpal ************** An error occurred while handling the confirmation from PayU with data:\n%s',

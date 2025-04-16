@@ -8,7 +8,6 @@ import requests
 
 SUPPORTED_CURRENCIES = ('IRR', 'IRT')
 
-
 class PaymentProvider(models.Model):
     _inherit = 'payment.provider'
 
@@ -34,7 +33,8 @@ class PaymentProvider(models.Model):
     @api.model
     def _get_compatible_providers(self, *args, currency_id=None, **kwargs):
         """ Override of payment to unlist zarinpal providers for unsupported currencies. """
-        providers = super()._get_compatible_providers(*args, currency_id=currency_id, **kwargs)
+        providers = super()._get_compatible_providers(
+            *args, currency_id=currency_id, **kwargs)
 
         currency = self.env['res.currency'].browse(currency_id).exists()
         if currency and currency.name not in SUPPORTED_CURRENCIES:
@@ -55,7 +55,7 @@ class PaymentProvider(models.Model):
         ZP_API_REQUEST = "https://api.zarinpal.com/pg/v4/payment/request.json"
         req_data = {
             "merchant_id": values['merchantId'],
-            "amount": values['amount'], # IRR
+            "amount": values['amount'],  # IRR
             "callback_url": values['apiBackUrl'],
             "description": values['description'],
             "metadata": {}
@@ -69,12 +69,13 @@ class PaymentProvider(models.Model):
         req_header = {"accept": "application/json",
                       "content-type": "application/json'"}
         req = requests.post(url=ZP_API_REQUEST, data=json.dumps(
-                req_data), headers=req_header)
+            req_data), headers=req_header)
         if len(req.json()['errors']) == 0:
             authority = req.json()['data']['authority']
             return authority
         else:
-            raise ValidationError(req.json()['errors']['message'] +' [ '+ str(req.json()['errors']['code']) + ' ]')
+            raise ValidationError(
+                req.json()['errors']['message'] + ' [ ' + str(req.json()['errors']['code']) + ' ]')
 
     def _get_default_payment_method_codes(self):
         self.ensure_one()
