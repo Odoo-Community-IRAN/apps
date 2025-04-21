@@ -7,7 +7,7 @@
     "summary": """Odoo Iran Account Report""",
     "description": """Odoo Iran Account Report""",
     "category": "Accounting/Localizations/Reporting",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir",
     "license": "AGPL-3",
