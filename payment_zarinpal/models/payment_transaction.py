@@ -66,7 +66,7 @@ class PaymentTransaction(models.Model):
             raise ValidationError('plz , set domain name first')
 
         base_url = self.get_base_url()
-        # base_url = "https://chitalk.net/"
+
         randomCode = uuid.uuid4()
         apiBackUrl = urls.url_join(base_url,'/payment/zarinpal/return/'+str(randomCode)+'/')
         ZP_API_STARTPAY = "https://www.zarinpal.com/pg/StartPay/"
