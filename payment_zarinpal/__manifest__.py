@@ -8,7 +8,7 @@
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir/",
     "category": "Accounting/Payment Acquirers",
-    "version": "16.0.1.0.0",
+    "version": "1.0.1",
     "license": "AGPL-3",
     "depends": ["payment"],
     "data": [

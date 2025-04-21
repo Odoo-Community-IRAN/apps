@@ -7,7 +7,7 @@
     "summary": """SMS sending with Kavenegar""",
     "description": """This module handles sms sending, using Kavenegar provider""",
     "category": "Hidden/Tools",
-    "version": "16.0.1.0.0",
+    "version": "1.0.1",
     "author": "Odoo Community Iran",
     "website": "https://odoo-community.ir",
     "license": "AGPL-3",
