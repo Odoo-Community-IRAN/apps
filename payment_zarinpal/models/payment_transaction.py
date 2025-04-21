@@ -21,7 +21,8 @@ class PaymentTransaction(models.Model):
     zarinpal_uuid = fields.Char(string="uuid")
 
     @api.model
-    def _compute_reference(self, provider, prefix=None, separator='-', **kwargs):
+    def _compute_reference(self, provider, prefix=None,
+                           separator='-', **kwargs):
         """ Override of payment to ensure that zarinpal requirements for references are satisfied.
 
         zarinpal requirements for transaction are as follows:
@@ -42,12 +43,15 @@ class PaymentTransaction(models.Model):
                 # for the `_compute_reference_prefix` method, as it is only called if the prefix is
                 # empty. We call it manually here because singularizing the prefix would generate a
                 # default value if it was empty, hence preventing the method from ever being called
-                # and the transaction from received a reference named after the related document.
+                # and the transaction from received a reference named after the
+                # related document.
                 prefix = self.sudo()._compute_reference_prefix(
                     provider, separator, **kwargs
                 ) or None
-            prefix = payment_utils.singularize_reference_prefix(prefix=prefix, separator=separator)
-        return super()._compute_reference(provider, prefix=prefix, separator=separator, **kwargs)
+            prefix = payment_utils.singularize_reference_prefix(
+                prefix=prefix, separator=separator)
+        return super()._compute_reference(
+            provider, prefix=prefix, separator=separator, **kwargs)
 
     def _get_specific_rendering_values(self, processing_values):
         """ Override of payment to return zarinpal-specific rendering values.
@@ -66,16 +70,19 @@ class PaymentTransaction(models.Model):
             raise ValidationError('plz , set domain name first')
 
         base_url = self.get_base_url()
-        # base_url = "https://chitalk.net/"
         randomCode = uuid.uuid4()
-        apiBackUrl = urls.url_join(base_url,'/payment/zarinpal/return/'+str(randomCode)+'/')
+        apiBackUrl = urls.url_join(
+            base_url,
+            '/payment/zarinpal/return/' +
+            str(randomCode) +
+            '/')
         ZP_API_STARTPAY = "https://www.zarinpal.com/pg/StartPay/"
 
         zarinpal_values = {
             'merchantId': self.provider_id.zarinpal_merchant_id,
             'referenceCode': self.reference,
             'description': self.reference,
-            'amount': int(processing_values['amount'])*10 if self.currency_id.name =="IRT" else int(processing_values['amount']),
+            'amount': int(processing_values['amount']) * 10 if self.currency_id.name == "IRT" else int(processing_values['amount']),
             'tax': 0,
             'taxReturnBase': 0,
             'currency': self.currency_id.name,
@@ -93,11 +100,12 @@ class PaymentTransaction(models.Model):
             zarinpal_values, incoming=False
         )
         self.write({
-                'zarinpal_signature':zarinpal_values['signature'],
-                'zarinpal_uuid':zarinpal_values['randomCode'],
-                'state':'draft'
-                })
-        zarinpal_values['api_url'] = ZP_API_STARTPAY + zarinpal_values['signature']
+            'zarinpal_signature': zarinpal_values['signature'],
+            'zarinpal_uuid': zarinpal_values['randomCode'],
+            'state': 'draft'
+        })
+        zarinpal_values['api_url'] = ZP_API_STARTPAY + \
+            zarinpal_values['signature']
         return zarinpal_values
 
     @api.model
@@ -118,7 +126,15 @@ class PaymentTransaction(models.Model):
 
         zarinpal_signature = data.get('Authority')
         zarinpal_uuid = data.get('uuid')
-        tx = self.search([('zarinpal_signature', '=', zarinpal_signature),('zarinpal_uuid', '=', zarinpal_uuid), ('provider_id.code', '=', 'zarinpal')])
+        tx = self.search([('zarinpal_signature',
+                           '=',
+                           zarinpal_signature),
+                          ('zarinpal_uuid',
+                           '=',
+                           zarinpal_uuid),
+                          ('provider_id.code',
+                           '=',
+                           'zarinpal')])
 
         if not tx:
             raise ValidationError(
@@ -127,36 +143,43 @@ class PaymentTransaction(models.Model):
 
         if data.get('Status') != 'OK':
             state = 'cancel'
-            state_message =  _("Transaction failed or canceled by user")
+            state_message = _("Transaction failed or canceled by user")
         else:
             req_header = {"accept": "application/json",
                           "content-type": "application/json'"}
             req_data = {
                 "merchant_id": tx.provider_id.zarinpal_merchant_id,
-                "amount": int(tx.amount)*10 if tx.currency_id.name =="IRT" else int(tx.amount),  
+                "amount": int(tx.amount) * 10 if tx.currency_id.name == "IRT" else int(tx.amount),
                 "authority": zarinpal_signature
             }
             ZP_API_VERIFY = "https://api.zarinpal.com/pg/v4/payment/verify.json"
-            req = requests.post(url=ZP_API_VERIFY, data=json.dumps(req_data), headers=req_header)
+            req = requests.post(
+                url=ZP_API_VERIFY,
+                data=json.dumps(req_data),
+                headers=req_header)
             if len(req.json()['errors']) == 0:
                 t_status = req.json()['data']['code']
-                if t_status == 100 :
+                if t_status == 100:
                     state = 'done'
-                    state_message = _("Transaction success.\nRefID: " + str(req.json()['data']['ref_id']))
+                    state_message = _(
+                        "Transaction success.\nRefID: " + str(req.json()['data']['ref_id']))
                 elif t_status == 101:
                     state = 'done'
-                    state_message = _("Transaction submitted : " + str(req.json()['data']['message']))
+                    state_message = _(
+                        "Transaction submitted : " + str(req.json()['data']['message']))
                 else:
                     state = 'error'
-                    state_message = _("Transaction failed.\nStatus: " + str(req.json()['data']['message']))
+                    state_message = _(
+                        "Transaction failed.\nStatus: " + str(req.json()['data']['message']))
             else:
                 e_code = req.json()['errors']['code']
                 e_message = req.json()['errors']['message']
                 state = 'error'
-                state_message = _(f"Error code: {e_code}, Error Message: {e_message}")
+                state_message = _(
+                    f"Error code: {e_code}, Error Message: {e_message}")
         tx.write({
-            'state':state,
-            'state_message':state_message
+            'state': state,
+            'state_message': state_message
         })
         return tx
 
@@ -181,11 +204,15 @@ class PaymentTransaction(models.Model):
         state_message = self.state_message
         if status == 'done':
             self._set_done(state_message=state_message)
-        elif status in ('error','cancel'):
+        elif status in ('error', 'cancel'):
             self._set_canceled(state_message=state_message)
         else:
             _logger.warning(
                 "received unrecognized payment state %s for transaction with reference %s",
                 status, self.reference
             )
-            self._set_error("zarinpal: " + _("Invalid payment status.") + '[%s]'%status)
+            self._set_error(
+                "zarinpal: " +
+                _("Invalid payment status.") +
+                '[%s]' %
+                status)
