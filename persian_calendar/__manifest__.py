@@ -9,20 +9,21 @@
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     'category': 'Localization/Iran',
-    'version': '1.0.1',
+    'version': '1.0.2',
     'license': 'LGPL-3',
     'depends': ['base', 'web',],
     'assets': {
         'web.assets_backend': [
             'persian_calendar/static/src/js/persian-date.js',
             'persian_calendar/static/src/js/farvardin.js',
-            'persian_calendar/static/src/js/datetimepicker_service.js',
+            'persian_calendar/static/src/js/datepicker/datetimepicker_service.js',
             'persian_calendar/static/src/js/loader.js',
         ],
         'persian_calendar.calendar_persian':[
             'persian_calendar/static/src/js/format_utils.js',
             'persian_calendar/static/src/js/list.js',
-            'persian_calendar/static/src/js/datetime_field.js',
+            'persian_calendar/static/src/js/datepicker/datetime_field.js',
+            'persian_calendar/static/src/js/datepicker/datetime_picker.js',
             'persian_calendar/static/src/js/jdatetime.js',
             'persian_calendar/static/src/js/kanban.js',
         ]

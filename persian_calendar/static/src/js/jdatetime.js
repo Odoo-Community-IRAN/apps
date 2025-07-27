@@ -302,9 +302,11 @@ const PRECISION_LEVELS = new Map()
         step: { year: 1 },
         getTitle: (date) => String(date.reconfigure({ outputCalendar: 'persian', locale: 'fa' }).toLocaleString({ year: 'numeric' })),
         getItems: (date, { maxDate, minDate }) => {
-            const startOfYear = date.startOf("year");
+            const jday = farvardin.gregorianToSolar(date.year, date.month, date.day);
+            const jdate = new persianDate([jday[0], jday[1], jday[2]]).startOf('year').toCalendar('gregorian');
+            const startOfYear = date.set({year: jdate.year(), month: jdate.month(), day: jdate.date()});
             return numberRange(0, 12).map((i) => {
-                const startOfMonth = startOfYear.plus({ month: i });
+                const startOfMonth = startOfYear.plus({ month: i + 1 });
                 const range = [startOfMonth, startOfMonth.endOf("month")];
                 return toDateItem({
                     isValid: isInRange(range, [minDate, maxDate]),
