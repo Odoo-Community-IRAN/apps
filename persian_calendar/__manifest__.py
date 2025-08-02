@@ -9,11 +9,12 @@
     'author': "Odoo Community Iran",
     'website': "https://odoo-community.ir/",
     'category': 'Localization/Iran',
-    'version': '1.0.2',
+    'version': '1.0.3',
     'license': 'LGPL-3',
     'depends': ['base', 'web',],
     'assets': {
         'web.assets_backend': [
+            'persian_calendar/static/lib/jalali/utils.js',
             'persian_calendar/static/src/js/persian-date.js',
             'persian_calendar/static/src/js/farvardin.js',
             'persian_calendar/static/src/js/datepicker/datetimepicker_service.js',
