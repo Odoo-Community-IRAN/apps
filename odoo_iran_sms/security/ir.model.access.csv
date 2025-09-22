@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_kavenegar_sms_provider,access.kavenegar.sms.provider,model_kavenegar_sms_provider,,1,1,1,1
