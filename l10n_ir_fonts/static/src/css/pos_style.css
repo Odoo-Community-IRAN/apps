@@ -1,0 +1,23 @@
+ /* 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+*/
+ /*  Font  Start */
+   body { font-family: Vazir;}
+   html { font-family: Vazir;}
+ .pos{font-family: Vazir;}
+ .pos .modal-dialog .popup {font-family: Vazir;}
+ .ui-dialog, .modal-dialog{font-family: Vazir;}
+ .pos textarea {font-family: Vazir;}
+ /*  Font  End */
+ 
+.pos .loader {
+    font-family: Vazir;
+}
+	
+	.pos button, .pos a.button {
+
+    font-family: Vazir;
+}
+

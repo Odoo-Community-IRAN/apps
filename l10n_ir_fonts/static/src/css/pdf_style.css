@@ -1,0 +1,46 @@
+ /* 
+Copyright (C) 2024-Today: Odoo Community Iran
+@author: Odoo Community Iran (https://odoo-community.ir/
+License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html). 
+*/
+
+.body  {
+    font-family: Vazir !important;
+}
+.page {
+	font-family: Vazir !important;
+}
+.span {
+	font-family: Vazir !important;
+}
+.pdfViewer {
+	font-family: Vazir !important;	
+}
+.row {
+	font-family: Vazir !important;	
+}
+.oe_structure {
+	font-family: Vazir !important;	
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: Vazir !important;
+}
+p {
+	font-family: Vazir !important;	
+}
+.textLayer {
+	font-family: Vazir !important;	
+}
+.o_account_reports_body_print,.o_account_reports_body,.o_account_report_column_value,.o_account_report_line,.o_account_reports_page table > tbody > tr > td.number{
+	font-family: Vazir !important;	
+}
+.container {
+	font-family: Vazir !important;	
+}
+.footer {
+	font-family: Vazir !important;	
+}
+#PDFBug, .o_account_dashboard_header,.o_account_reports{
+	font-family: Vazir !important;	
+	background-color: red !important;
+}
