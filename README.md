@@ -20,11 +20,8 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[disable_enterprise](disable_enterprise/) | 17.0.1.0.0 |  | Disable Enterprise
-[l10n_ir_account](l10n_ir_account/) | 17.0.1.0.0 |  | Iran Account
-[l10n_ir_fonts](l10n_ir_fonts/) | 17.0.1.0.0 |  | Iran Font
-[persian_calendar](persian_calendar/) | 17.0.1.0.0 |  | Persian Calendar
-[persian_translation](persian_translation/) | 17.0.1.0.0 |  | Persian translation
+[disable_enterprise](disable_enterprise/) | 19.0.1.0.0 |  | Disable Enterprise
+[l10n_ir_fonts](l10n_ir_fonts/) | 19.0.1.0.0 |  | Iran Font
 
 [//]: # (end addons)
 
