@@ -10,10 +10,12 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="model">kavenegar.sms.provider</field>
         <field name="arch" type="xml">
             <list>
+                <field name="sequence" widget="handle"/>
                 <field name="name"/>
-                <field name="credit"/>
                 <field name="sender_number"/>
-                <field name="sequence"/>
+                <field name="credit"/>
+                <field name="active"/>
+                <field name="company_ids" widget="many2many_tags"/>
             </list>
         </field>
     </record>
@@ -27,21 +29,28 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
                     <button name="action_credit_btn" string="Update Credit" class="oe_highlight" type="object"/>
                 </header>
                 <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
                     <div class="oe_title">
                         <h1>
-                            <field name="name" placeholder="Name"/>
+                            <field name="name" placeholder="Provider Name"/>
                         </h1>
                     </div>
                     <group>
-                        <field name="api_key"/>
-                    </group>
-                    <group>
-                        <group>
+                        <group name="connection_info" string="Connection Information">
+                            <field name="api_key" password="True"/>
                             <field name="sender_number"/>
-                            <field name="sequence"/>
-                            <field name="credit"/>
-                            <field name="latest_credit_update"/>
                         </group>
+                        <group name="status_info" string="Status Information">
+                            <field name="active"/>
+                            <field name="sequence"/>
+                            <field name="credit" readonly="1"/>
+                            <field name="latest_credit_update" readonly="1"/>
+                        </group>
+                    </group>
+                    <group name="company_access" string="Company Access">
+                        <field name="company_ids" widget="many2many_tags" 
+                               options="{'color_field': 'color'}"
+                               help="Leave empty to make this provider available for all companies"/>
                     </group>
                 </sheet>
                 <chatter/>
@@ -53,5 +62,19 @@ License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
         <field name="name">Kavenegar SMS Providers</field>
         <field name="res_model">kavenegar.sms.provider</field>
         <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Kavenegar SMS Provider
+            </p>
+            <p>
+                Configure your Kavenegar API credentials to enable SMS sending through the Kavenegar service.
+            </p>
+        </field>
     </record>
+
+    <menuitem id="menu_kavenegar_sms_provider" 
+              name="SMS Providers" 
+              parent="base.menu_administration"
+              action="kavenegar_sms_provider_action_window"
+              sequence="100"/>
 </odoo>
